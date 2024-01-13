@@ -13,11 +13,11 @@ def hello():
 @app.route("/<int:num>")
 def guess(num):
     if num==random_number:
-        pass
+        return "<h1>Correct.</h1>"
     elif num<random_number:
-        pass
+        return "<h1>Too low,try again.</h1>"
     elif num>random_number:
-        pass
+        return "<h1>Too high,try again.</h1>"
     else:
         return "<h1>Please Type in a number only!</h1>"
 
